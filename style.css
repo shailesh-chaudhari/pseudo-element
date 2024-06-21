@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+#topbar {
+    background-color: brown;
+    padding: 16px;
+    box-shadow: 0 5px 10px #aaa;
+    margin-bottom: 50px;
+}
+
+#logo {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-item {
+    font-size: 24px;
+    margin-right: 16px;
+    float: right;
+    cursor: pointer;
+}
+
+.article1 {
+    padding: 18px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 36px;
+    line-height: 1.4;
+    box-shadow: 0 5px 10px #aaa;
+}
+
+.article2 {
+    padding: 18px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 36px;
+    line-height: 1.4;
+    box-shadow: 0 5px 10px #aaa;
+}
+
+.article3 {
+    padding: 18px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 36px;
+    line-height: 1.4;
+    box-shadow: 0 5px 10px #aaa;
+}
+
+.article4 {
+    padding: 18px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 36px;
+    line-height: 1.4;
+    box-shadow: 0 5px 10px #aaa;
+}
+
+.article-wrapper {
+    padding: 0 15%;
+}
+
+.heading {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* ::First-line it is used to add styles to the fist line of some text this text could be paragraph <p>, heading (<h1>-<h6>) etc. and this pseudo element only works with block level element. */
+.article1>p::first-line {
+    letter-spacing: 3px;
+    color: red;
+    background-color: yellow;
+}
+
+/* ::First-letter it is used to add styles to the fist letter of some text this text could be paragraph <p>, heading (<h1>-<h6>) etc. and this pseudo element only works with block level element. we can use multiple pseudo elements. */
+.article2>p::first-letter {
+    font-size: 36px;
+    color: red;
+}
+
+.article2>p::first-line {
+    letter-spacing: 3px;
+    color: brown;
+}
+
+/* ::selection It is used to add styles to the selected text in another words it is used to style the text highlight. */
+.article3>p::selection {
+    background-color: red;
+    color: pink
+}
+
+/* ::before and ::after
+::before is used to add some content before the content of html element 
+::after is used to add some content after the content of html element 
+this content could be text, Image ot blank */
+.article4>p::before {
+    content: "'";
+}
+
+.article4>p::after {
+    content: "'";
+}
+
+.article4>p::before {
+    content: url('https://cdn1.iconfinder.com/data/icons/city-flat-2/512/vehicle_transport_car_drive_taxi-64.png');
+}
+
+.article4>p::after {
+    content: url('https://cdn1.iconfinder.com/data/icons/city-flat-2/512/vehicle_transport_car_drive_taxi-64.png');
+}
